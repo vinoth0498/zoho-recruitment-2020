@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n=5,i,j,min;
+    cout<<"value of No:"<<n<<endl;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            min=i<j ? i:j;
+            cout<<n-min+1;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
